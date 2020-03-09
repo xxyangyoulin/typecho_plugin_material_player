@@ -140,6 +140,9 @@ class MaterialPlayer_Plugin implements Typecho_Plugin_Interface
 
     public static function fixed($top = null, $right = null, $left = null)
     {
+        if (!array_key_exists('MaterialPlayer', Typecho_Plugin::export()['activated'])) {
+            return;
+        }
 
         $top = $top ? "top:" . $top . ";" : "";
         $right = $right ? "right:" . $right . ";" : "";
@@ -152,6 +155,10 @@ class MaterialPlayer_Plugin implements Typecho_Plugin_Interface
 
     public static function insert()
     {
+        if (!array_key_exists('MaterialPlayer', Typecho_Plugin::export()['activated'])) {
+            return;
+        }
+
         $musicList = MaterialPlayer_Plugin::getMusicList();
         if (sizeof($musicList) == 0) {
             echo "<!--Material Player： 没有歌曲-->";
