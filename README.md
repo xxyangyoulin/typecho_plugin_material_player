@@ -15,6 +15,10 @@ Step 2.
 Step 3.   
 设置中启动插件。
 
+效果预览：
+[typecho.yangyoulin.com](http://typecho.yangyoulin.com)
+
+
 ![nEx6HqbVmkRXao9](https://i.loli.net/2020/03/09/nEx6HqbVmkRXao9.png)
 
 ![H76eyhdqUZnGTlP](https://i.loli.net/2020/03/09/H76eyhdqUZnGTlP.png)
