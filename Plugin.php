@@ -138,7 +138,7 @@ class MaterialPlayer_Plugin implements Typecho_Plugin_Interface
     }
 
 
-    public static function fixed($top = null, $right = null, $left = null)
+    public static function fixed($top = null, $right = null, $left = null,$style="")
     {
         if (!array_key_exists('MaterialPlayer', Typecho_Plugin::export()['activated'])) {
             return;
@@ -149,11 +149,11 @@ class MaterialPlayer_Plugin implements Typecho_Plugin_Interface
         $left = $left ? "left:" . $left . ";" : "";
 
         echo '<div style="position: fixed;' . $top . $right . $left . '">';
-        MaterialPlayer_Plugin::insert();
+        MaterialPlayer_Plugin::insert($style);
         echo '</div>';
     }
 
-    public static function insert()
+    public static function insert($style="")
     {
         if (!array_key_exists('MaterialPlayer', Typecho_Plugin::export()['activated'])) {
             return;
@@ -175,7 +175,7 @@ class MaterialPlayer_Plugin implements Typecho_Plugin_Interface
         }
 
         echo '<!--Material Player-->
-    <div id="mp-music" data-autoplay="' . $autoPlay . '"  data-autoplaynext="' . $autoPlayNext . '">
+    <div id="mp-music" data-autoplay="' . $autoPlay . '"  data-autoplaynext="' . $autoPlayNext . '" style="'.$style.'">
         <div id="mp-music-wrapper">
             <div id="mp-list">
                 <ul>
