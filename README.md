@@ -23,3 +23,5 @@ Step 3.
 
 ![H76eyhdqUZnGTlP](https://i.loli.net/2020/03/09/H76eyhdqUZnGTlP.png)
 
+注意：  
+网站音乐播放器需要ajax加载页面技术支持，否则跳转页面会中断音乐播放，严重影响体验！

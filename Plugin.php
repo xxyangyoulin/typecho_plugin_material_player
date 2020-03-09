@@ -7,7 +7,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  * @package MaterialPlayer
  * @author xxyangyoulin
  * @version 1.0.0
- * @link http://typecho.org
+ * @link https://github.com/mnnyang/typecho_plugin_material_player
  */
 class MaterialPlayer_Plugin implements Typecho_Plugin_Interface
 {
